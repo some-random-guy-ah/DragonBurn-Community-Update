@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEFEC775-17BB-3F6A-A2C7-8124EF97599D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Dragonburn-user</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)build\obj\$(Configuration)\</IntDir>
+    <TargetName>Dragonburn-user</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)build\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)build\obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)deps\imgui;$(ProjectDir)deps\imgui\backends;$(ProjectDir)deps\json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Gw</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NOMINMAX;IMGUI_DISABLE_DEMO_WINDOWS;IMGUI_DISABLE_DEBUG_TOOLS;IMGUI_DEFINE_MATH_OPERATORS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;IMGUI_DISABLE_DEMO_WINDOWS;IMGUI_DISABLE_DEBUG_TOOLS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)deps\imgui;$(ProjectDir)deps\imgui\backends;$(ProjectDir)deps\json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dwmapi.lib;windowscodecs.lib;ole32.lib;dxgi.lib;dcomp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableUAC>true</EnableUAC>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)icons" "$(OutDir)icons\" /E /I /Y
+copy /Y "$(ProjectDir)grenades.json" "$(OutDir)grenades.json"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)deps\imgui;$(ProjectDir)deps\imgui\backends;$(ProjectDir)deps\json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Gw</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;IMGUI_DISABLE_DEMO_WINDOWS;IMGUI_DISABLE_DEBUG_TOOLS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;IMGUI_DISABLE_DEMO_WINDOWS;IMGUI_DISABLE_DEBUG_TOOLS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)deps\imgui;$(ProjectDir)deps\imgui\backends;$(ProjectDir)deps\json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dwmapi.lib;windowscodecs.lib;ole32.lib;dxgi.lib;dcomp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableUAC>true</EnableUAC>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)icons" "$(OutDir)icons\" /E /I /Y
+copy /Y "$(ProjectDir)grenades.json" "$(OutDir)grenades.json"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="helpers\fonts.cpp" />
+    <ClCompile Include="helpers\icons.cpp" />
+    <ClCompile Include="helpers\window_drag.cpp" />
+    <ClCompile Include="data\fontello_data.cpp" />
+    <ClCompile Include="ui\draw\fx.cpp" />
+    <ClCompile Include="ui\sidebar\sidebar.cpp" />
+    <ClCompile Include="ui\topbar\topbar.cpp" />
+    <ClCompile Include="ui\widgets\widgets.cpp" />
+    <ClCompile Include="deps\imgui\imgui.cpp" />
+    <ClCompile Include="deps\imgui\imgui_draw.cpp" />
+    <ClCompile Include="deps\imgui\imgui_tables.cpp" />
+    <ClCompile Include="deps\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="deps\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="deps\imgui\backends\imgui_impl_dx11.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UIAccess.h" />
+    <ClInclude Include="aimbot.h" />
+    <ClInclude Include="aimbot_math.h" />
+    <ClInclude Include="box_renderer.h" />
+    <ClInclude Include="c4_esp.h" />
+    <ClInclude Include="chams_renderer.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="crosshair.h" />
+    <ClInclude Include="entity_reader.h" />
+    <ClInclude Include="entity_utils.h" />
+    <ClInclude Include="grenades.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="offsets.h" />
+    <ClInclude Include="overlay.h" />
+    <ClInclude Include="radar.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="shared_state.h" />
+    <ClInclude Include="spectators.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="visible_esp.h" />
+    <ClInclude Include="weapon_icons.h" />
+    <ClInclude Include="memory\driver_manager.h" />
+    <ClInclude Include="memory\imemory.h" />
+    <ClInclude Include="memory\memory_driver.h" />
+    <ClInclude Include="memory\memory_syscall.h" />
+    <ClInclude Include="memory\memory_utils.h" />
+    <ClInclude Include="memory\memory_winapi.h" />
+    <ClInclude Include="memory\shared.h" />
+    <ClInclude Include="memory\syscalls.h" />
+    <ClInclude Include="input\input.h" />
+    <ClInclude Include="systems\bvh.h" />
+    <ClInclude Include="Resources\Font.h" />
+    <ClInclude Include="Resources\Images.h" />
+    <ClInclude Include="Resources\Language.h" />
+    <ClInclude Include="Resources\Sounds.h" />
+    <ClInclude Include="Resources\WeaponIcon.h" />
+    <ClInclude Include="Resources\resource.h" />
+    <ClInclude Include="theme\colors.h" />
+    <ClInclude Include="theme\layout.h" />
+    <ClInclude Include="helpers\animation.h" />
+    <ClInclude Include="helpers\fonts.h" />
+    <ClInclude Include="helpers\icons.h" />
+    <ClInclude Include="helpers\window_drag.h" />
+    <ClInclude Include="data\fontello_data.h" />
+    <ClInclude Include="data\fonts_data.h" />
+    <ClInclude Include="ui\draw\fx.h" />
+    <ClInclude Include="ui\sidebar\sidebar.h" />
+    <ClInclude Include="ui\topbar\topbar.h" />
+    <ClInclude Include="ui\widgets\widgets.h" />
+    <ClInclude Include="deps\imgui\imgui.h" />
+    <ClInclude Include="deps\imgui\imgui_internal.h" />
+    <ClInclude Include="deps\imgui\imconfig.h" />
+    <ClInclude Include="deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="deps\imgui\imstb_truetype.h" />
+    <ClInclude Include="deps\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="deps\imgui\backends\imgui_impl_dx11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+    <None Include="grenades.json" />
+    <None Include="dmp.sh" />
+    <None Include="icons\topng.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\ak47.png" />
+    <Image Include="icons\ammobox.png" />
+    <Image Include="icons\ammobox_threepack.png" />
+    <Image Include="icons\armor.png" />
+    <Image Include="icons\armor_helmet.png" />
+    <Image Include="icons\assaultsuit.png" />
+    <Image Include="icons\assaultsuit_helmet_only.png" />
+    <Image Include="icons\aug.png" />
+    <Image Include="icons\awp.png" />
+    <Image Include="icons\bayonet.png" />
+    <Image Include="icons\bizon.png" />
+    <Image Include="icons\c4.png" />
+    <Image Include="icons\clothing_hands.png" />
+    <Image Include="icons\customplayer.png" />
+    <Image Include="icons\cz75a.png" />
+    <Image Include="icons\deagle.png" />
+    <Image Include="icons\decoy.png" />
+    <Image Include="icons\defuser.png" />
+    <Image Include="icons\disconnect.png" />
+    <Image Include="icons\dronegun.png" />
+    <Image Include="icons\elite.png" />
+    <Image Include="icons\famas.png" />
+    <Image Include="icons\firebomb.png" />
+    <Image Include="icons\fiveseven.png" />
+    <Image Include="icons\flair0.png" />
+    <Image Include="icons\flashbang.png" />
+    <Image Include="icons\flashbang_assist.png" />
+    <Image Include="icons\g3sg1.png" />
+    <Image Include="icons\galilar.png" />
+    <Image Include="icons\glock.png" />
+    <Image Include="icons\grenadepack.png" />
+    <Image Include="icons\grenadepack2.png" />
+    <Image Include="icons\healthshot.png" />
+    <Image Include="icons\heavy_armor.png" />
+    <Image Include="icons\hegrenade.png" />
+    <Image Include="icons\helmet.png" />
+    <Image Include="icons\hkp2000.png" />
+    <Image Include="icons\incgrenade.png" />
+    <Image Include="icons\inferno.png" />
+    <Image Include="icons\kevlar.png" />
+    <Image Include="icons\knife.png" />
+    <Image Include="icons\knifegg.png" />
+    <Image Include="icons\knife_bowie.png" />
+    <Image Include="icons\knife_butterfly.png" />
+    <Image Include="icons\knife_canis.png" />
+    <Image Include="icons\knife_cord.png" />
+    <Image Include="icons\knife_css.png" />
+    <Image Include="icons\knife_falchion.png" />
+    <Image Include="icons\knife_flip.png" />
+    <Image Include="icons\knife_gut.png" />
+    <Image Include="icons\knife_gypsy_jackknife.png" />
+    <Image Include="icons\knife_karambit.png" />
+    <Image Include="icons\knife_kukri.png" />
+    <Image Include="icons\knife_m9_bayonet.png" />
+    <Image Include="icons\knife_outdoor.png" />
+    <Image Include="icons\knife_push.png" />
+    <Image Include="icons\knife_skeleton.png" />
+    <Image Include="icons\knife_stiletto.png" />
+    <Image Include="icons\knife_survival_bowie.png" />
+    <Image Include="icons\knife_t.png" />
+    <Image Include="icons\knife_tactical.png" />
+    <Image Include="icons\knife_twinblade.png" />
+    <Image Include="icons\knife_ursus.png" />
+    <Image Include="icons\knife_widowmaker.png" />
+    <Image Include="icons\m249.png" />
+    <Image Include="icons\m4a1.png" />
+    <Image Include="icons\m4a1_silencer.png" />
+    <Image Include="icons\m4a1_silencer_off.png" />
+    <Image Include="icons\mac10.png" />
+    <Image Include="icons\mag7.png" />
+    <Image Include="icons\melee.png" />
+    <Image Include="icons\molotov.png" />
+    <Image Include="icons\movelinear.png" />
+    <Image Include="icons\mp5sd.png" />
+    <Image Include="icons\mp7.png" />
+    <Image Include="icons\mp9.png" />
+    <Image Include="icons\negev.png" />
+    <Image Include="icons\nova.png" />
+    <Image Include="icons\p2000.png" />
+    <Image Include="icons\p250.png" />
+    <Image Include="icons\p90.png" />
+    <Image Include="icons\planted_c4.png" />
+    <Image Include="icons\prop_exploding_barrel.png" />
+    <Image Include="icons\revolver.png" />
+    <Image Include="icons\sawedoff.png" />
+    <Image Include="icons\scar20.png" />
+    <Image Include="icons\sg556.png" />
+    <Image Include="icons\smokegrenade.png" />
+    <Image Include="icons\spray0.png" />
+    <Image Include="icons\ssg08.png" />
+    <Image Include="icons\stomp_damage.png" />
+    <Image Include="icons\taser.png" />
+    <Image Include="icons\tec9.png" />
+    <Image Include="icons\trigger_hurt.png" />
+    <Image Include="icons\ump45.png" />
+    <Image Include="icons\usp_silencer.png" />
+    <Image Include="icons\usp_silencer_off.png" />
+    <Image Include="icons\worldent.png" />
+    <Image Include="icons\xm1014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="deps\json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

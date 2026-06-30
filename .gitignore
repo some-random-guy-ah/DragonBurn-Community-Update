@@ -1,0 +1,44 @@
+# Build outputs
+build/
+x64/
+built/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.idb
+*.ipdb
+*.iobj
+*.res
+*.recipe
+
+# Visual Studio
+.vs/
+*.sln.docstates
+*.vcxproj.user
+*.aps
+*.suo
+*.user
+Dragonburn-user/
+cache/
+
+# Temp files
+*.log
+*.tmp
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+*.swp
+*.swo
+*~

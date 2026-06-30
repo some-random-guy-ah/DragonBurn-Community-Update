@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{172EA717-F1E7-3392-8B3C-D395AA2FCDFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1653AB74-D5DB-3930-BD86-A4225BA536C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{A2B8E5A0-3F4C-4B2E-9A1D-7C1D2E3F4A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Backends">
+      <UniqueIdentifier>{B3C9F6B1-4A5D-4C3F-AB2E-8D2E3F4A5B6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{C117A4EF-F47A-3F90-A680-326299728172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{D4E1A2B3-C5D6-4E7F-8A9B-0C1D2E3F4A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Draw">
+      <UniqueIdentifier>{E5F2B3C4-D6E7-4F8A-9B0C-1D2E3F4A5B6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Sidebar">
+      <UniqueIdentifier>{F6A3C4D5-E7F8-4A9B-0C1D-2E3F4A5B6C7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Topbar">
+      <UniqueIdentifier>{A7B4D5E6-F8A9-4B0C-1D2E-3F4A5B6C7D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets">
+      <UniqueIdentifier>{B8C5E6F7-A9B0-4C1D-2E3F-4A5B6C7D8E9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{C9D6F7A8-B0C1-4D2E-3F4A-5B6C7D8E9F0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{DAE7A8B9-C1D2-4E3F-4A5B-6C7D8E9F0A1B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{EBF8B9C0-D2E3-4F4A-5B6C-7D8E9F0A1B2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Theme">
+      <UniqueIdentifier>{FCA9C0D1-E3F4-4A5B-6C7D-8E9F0A1B2C3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{A1B2C3D4-E5F6-4A7B-8C9D-0E1F2A3B4C5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{B2C3D4E5-F6A7-4B8C-9D0E-1F2A3B4C5D6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{C3D4E5F6-A7B8-4C9D-0E1F-2A3B4C5D6E7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\fonts.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\icons.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\window_drag.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="data\fontello_data.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\draw\fx.cpp">
+      <Filter>UI\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\sidebar\sidebar.cpp">
+      <Filter>UI\Sidebar</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\topbar\topbar.cpp">
+      <Filter>UI\Topbar</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\widgets\widgets.cpp">
+      <Filter>UI\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>ImGui\Backends</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>ImGui\Backends</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UIAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="box_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="c4_esp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chams_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crosshair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grenades.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="radar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visible_esp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon_icons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\driver_manager.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\imemory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory_driver.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory_syscall.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory_utils.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory_winapi.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\shared.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\syscalls.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="input\input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\bvh.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Font.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Images.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Language.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Sounds.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\WeaponIcon.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="theme\colors.h">
+      <Filter>Theme</Filter>
+    </ClInclude>
+    <ClInclude Include="theme\layout.h">
+      <Filter>Theme</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\animation.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\fonts.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\icons.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\window_drag.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="data\fontello_data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\fonts_data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\draw\fx.h">
+      <Filter>UI\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\sidebar\sidebar.h">
+      <Filter>UI\Sidebar</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\topbar\topbar.h">
+      <Filter>UI\Topbar</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\widgets\widgets.h">
+      <Filter>UI\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\backends\imgui_impl_win32.h">
+      <Filter>ImGui\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\imgui\backends\imgui_impl_dx11.h">
+      <Filter>ImGui\Backends</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="grenades.json" />
+    <None Include="dmp.sh" />
+    <None Include="icons\topng.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\ak47.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\ammobox.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\ammobox_threepack.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\armor.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\armor_helmet.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\assaultsuit.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\assaultsuit_helmet_only.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\aug.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\awp.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\bayonet.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\bizon.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\c4.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\clothing_hands.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\customplayer.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\cz75a.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\deagle.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\decoy.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\defuser.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\disconnect.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\dronegun.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\elite.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\famas.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\firebomb.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\fiveseven.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\flair0.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\flashbang.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\flashbang_assist.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\g3sg1.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\galilar.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\glock.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\grenadepack.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\grenadepack2.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\healthshot.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\heavy_armor.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\hegrenade.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\helmet.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\hkp2000.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\incgrenade.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\inferno.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\kevlar.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knifegg.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_bowie.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_butterfly.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_canis.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_cord.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_css.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_falchion.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_flip.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_gut.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_gypsy_jackknife.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_karambit.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_kukri.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_m9_bayonet.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_outdoor.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_push.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_skeleton.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_stiletto.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_survival_bowie.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_t.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_tactical.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_twinblade.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_ursus.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\knife_widowmaker.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\m249.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\m4a1.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\m4a1_silencer.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\m4a1_silencer_off.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\mac10.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\mag7.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\melee.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\molotov.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\movelinear.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\mp5sd.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\mp7.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\mp9.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\negev.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\nova.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\p2000.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\p250.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\p90.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\planted_c4.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\prop_exploding_barrel.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\revolver.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\sawedoff.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\scar20.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\sg556.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\smokegrenade.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\spray0.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\ssg08.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\stomp_damage.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\taser.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\tec9.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\trigger_hurt.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\ump45.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\usp_silencer.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\usp_silencer_off.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\worldent.png"><Filter>Icons</Filter></Image>
+    <Image Include="icons\xm1014.png"><Filter>Icons</Filter></Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="deps\json\nlohmann_json.natvis" />
+  </ItemGroup>
+</Project>
